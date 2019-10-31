@@ -1,5 +1,6 @@
 package com.roy.demo.batch;
 
+import java.net.URL;
 import java.util.Arrays;
 
 import org.springframework.batch.core.ExitStatus;
@@ -71,6 +72,16 @@ public class SpringBatchManager {
 	}
 
 	public static void main (String args[]) {
-		process(args);
+//		URL url = SpringBatchManager.class.getClassLoader().getResource(args[0]);
+//		System.out.println(url);
+//		process(args);
+		
+		Object a = getObj();
+		double b = Double.parseDouble(a.toString());
+		System.out.println(b);
+	}
+	
+	private static Object getObj () {
+		return new Integer (10);
 	}
 }

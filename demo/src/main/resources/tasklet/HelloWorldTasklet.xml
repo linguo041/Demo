@@ -11,7 +11,7 @@
         </batch:step>
     </batch:job>
 
-    <bean id="helloWorldTasklet" class="com.duoshouji.server.batch.tasklet.HelloWorldTasklet" />
+    <bean id="helloWorldTasklet" class="com.roy.demo.batch.tasklet.HelloWorldTasklet" />
 
     <bean id="resourcelessTransactionManager"
           class="org.springframework.batch.support.transaction.ResourcelessTransactionManager" />
